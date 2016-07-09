@@ -4,7 +4,7 @@
 [![Coverage Status](https://codecov.io/gh/Jyrno42/tg-option-container/branch/master/graph/badge.svg)](https://codecov.io/gh/Jyrno42/tg-option-container)
 [![PyPI Status](https://badge.fury.io/py/tg-option-container.png)](https://badge.fury.io/py/tg-option-container)
 
-TG Option Container - Container for dictionary-like validated data structures
+Container for dictionary-like validated data structures
 
 Documentation is available on Read the Docs: [http://tg-option-container.readthedocs.io](http://tg-option-container.readthedocs.io)
 
