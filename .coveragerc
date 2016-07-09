@@ -1,0 +1,10 @@
+[run]
+branch = True
+source =
+    tg_option_container/
+
+omit =
+    setup.py
+
+[html]
+directory = cover

@@ -1,0 +1,35 @@
+language: python
+
+python:
+    - "3.5"
+
+sudo: false
+
+env:
+  - TOX_ENV=py35
+  - TOX_ENV=py34
+  - TOX_ENV=py33
+  - TOX_ENV=py32
+  - TOX_ENV=py27
+  - TOX_ENV=lint
+  - TOX_ENV=coverage
+  - TOX_ENV=docs
+
+install:
+  - pip install tox coveralls
+  # see the following issue: https://github.com/travis-ci/travis-ci/issues/5485#issuecomment-173837358
+  - pip install "virtualenv<14"
+
+script:
+    - tox -e $TOX_ENV
+
+after_success:
+    - pip install codecov
+    - codecov -e $TOX_ENV
+
+notifications:
+    email: false
+
+addons:
+  apt_packages:
+    - pandoc

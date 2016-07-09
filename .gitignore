@@ -1,0 +1,17 @@
+*.pyc
+db.sqlite3
+
+.sass-cache/
+.idea/
+.cache/
+.tox/
+tg_option_container.egg-info
+build/
+dist/
+
+venv/
+venv3.*/
+
+.coverage
+coverage.xml
+cover/

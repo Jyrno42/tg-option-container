@@ -1,0 +1,7 @@
+-r core.txt
+
+pytest==2.9.1
+pytest-cov==1.8.1
+pytz
+tox
+pypandoc
