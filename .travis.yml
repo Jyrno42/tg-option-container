@@ -48,3 +48,6 @@ deploy:
     tags: true
     distributions: sdist bdist_wheel
     repo: thorgate/tg-option-container
+
+notifications:
+  email: false
