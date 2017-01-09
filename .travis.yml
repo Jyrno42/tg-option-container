@@ -37,13 +37,10 @@ deploy:
   user: thorgate
   password:
     secure: >
-      cTZ36o0PKte+YaJmmtSvoIGbyfmOlnDeJMUXJ/hBXOQ0QDFCmEXodTKb4pBc4CPk2H4vg09mc4XNWjPAfdOXuJrIoTZHOMjexvWxZY2hSbjJP
-      hNc6VURgjwih5R9SAvEg3ySRac2pGeHwTgKavHpzJbUtbsVU0RsU9/bEhaDXJrtE2uV1Pq2zSbZWDMKgZMYCSDQmwM1FZQ/SGlTmTRgywNv1w
-      Q3lFQ62WXaXe/hepwxIyCLV8B6OVbWc1n1MclcUfX5hGwg3qxbknGmI2x4ft4oyxSpBn4alTWFlhxemhCTccjCKPyXTn+7XNT5ApyWLSR38zq
-      jm+wpUhP0dAHFeY9rUrSahX51rcDZ8B4f3an3Pt5MI4TOnN6bsgBD9zDeZ8gBSTMNspX40aati6avdx4xc7rcl8/oxTbFLo5PGNZeSe2CJgCO
-      zwXtvqKCa45pi6gg41pscTBUu+qce458lzH4DHZ5HQhCpqW4WU65BvBNkEDGj1gC3hMANljx92JamnGbBc/gwAhmEtjYzpLb/+jOagxiSKqg0
-      N/pXl1n3OhfOnIoccmsScgp5jgYxE71RM6otB92c+BNUxJ/OTy5zo5WehRji9Kmlx8Dm69KwsJmzFyEvNFTW/NuRZjodU4N+nezvoXZVmSuRV
-      /prjMQaFMwKJhtE/zPV51ZDnxHRJ0=
+      l+ImrClIvD/LYsqr5KIKhBBFYBtDAfDhWYnW/tdZGpkPTDy0hWdf1+KaLc7tvb1gmG8eKEM/ErN8vfZM+6Etjo9znMgp60WSk4wyjWwkHX2Yc
+      4EYHeyJ1YOVo/nhNdlFMl3R/1ynOB1qWN4+5VvHdpatuPMquPqShqZzwxUi9HJfCAUVPf1NKfnCzuHT1L3+mWtw40sjDPVH74e5suIHw36GJG
+      jx1ioUMk+1IyRk5afiJ3Ye6FqHbOS0Oe7LWx2wCLXrzJyqrGCOcjh8wegW3fVBf5yCe14+pT76kHC81Q3FgbRoqNRUaxgUdKzy5m5RYqXNVza
+      LG5lFJJzei/OC414G+Pls=
   on:
     tags: true
     distributions: sdist bdist_wheel
