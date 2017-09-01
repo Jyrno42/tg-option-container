@@ -32,16 +32,21 @@ notifications:
 addons:
   apt_packages:
     - pandoc
-deploy:
-  provider: pypi
-  user: thorgate
-  password:
-    secure: >
-      l+ImrClIvD/LYsqr5KIKhBBFYBtDAfDhWYnW/tdZGpkPTDy0hWdf1+KaLc7tvb1gmG8eKEM/ErN8vfZM+6Etjo9znMgp60WSk4wyjWwkHX2Yc
-      4EYHeyJ1YOVo/nhNdlFMl3R/1ynOB1qWN4+5VvHdpatuPMquPqShqZzwxUi9HJfCAUVPf1NKfnCzuHT1L3+mWtw40sjDPVH74e5suIHw36GJG
-      jx1ioUMk+1IyRk5afiJ3Ye6FqHbOS0Oe7LWx2wCLXrzJyqrGCOcjh8wegW3fVBf5yCe14+pT76kHC81Q3FgbRoqNRUaxgUdKzy5m5RYqXNVza
-      LG5lFJJzei/OC414G+Pls=
-  on:
-    tags: true
-    distributions: sdist bdist_wheel
-    repo: thorgate/tg-option-container
+
+jobs:
+  include:
+    - stage: deploy
+      env: TOX_ENV=py35
+      deploy:
+        provider: pypi
+        user: thorgate
+        password:
+          secure: >
+            l+ImrClIvD/LYsqr5KIKhBBFYBtDAfDhWYnW/tdZGpkPTDy0hWdf1+KaLc7tvb1gmG8eKEM/ErN8vfZM+6Etjo9znMgp60WSk4wyjWwkHX2Yc
+            4EYHeyJ1YOVo/nhNdlFMl3R/1ynOB1qWN4+5VvHdpatuPMquPqShqZzwxUi9HJfCAUVPf1NKfnCzuHT1L3+mWtw40sjDPVH74e5suIHw36GJG
+            jx1ioUMk+1IyRk5afiJ3Ye6FqHbOS0Oe7LWx2wCLXrzJyqrGCOcjh8wegW3fVBf5yCe14+pT76kHC81Q3FgbRoqNRUaxgUdKzy5m5RYqXNVza
+            LG5lFJJzei/OC414G+Pls=
+        on:
+          tags: true
+          distributions: sdist bdist_wheel
+          repo: thorgate/tg-option-container
